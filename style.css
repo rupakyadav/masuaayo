@@ -1,0 +1,264 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Navbar : Logo and image style */
+#logo {
+    margin: 25px 20px;
+}
+
+#logo img {
+    width: 60px;
+}
+
+/* navbar */
+#nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+}
+
+#nav::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+#nav ul li a:active {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+/* Home Section */
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 500px;
+}
+
+#home::before {
+    content: "";
+    background: url(masu1.jpg) no-repeat center center/cover;
+    background-color: black;
+    height: 580px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 40px rgb(33, 33, 33);
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 40px rgb(33, 33, 33);
+}
+
+/* services section */
+#services-container h1 {
+    font-size: 3rem;
+}
+
+#order-button {
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    background-color: brown;
+    margin: 18px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#order-button:hover {
+    background-color: rgb(216, 69, 69);
+}
+#order-button:active{
+    background-color: rgba(165, 42, 42, 0.435);
+}
+
+/* services */
+#services {
+    display: flex;
+    margin: 34px;
+}
+
+#services .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 25px;
+    background-color: rgb(234, 234, 234);
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* client section */
+#client-section {
+    /* height: 350px; */
+    position: relative;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+#client-section::before {
+    content: "";
+    background: url(bg2.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#client-section h1 {
+    font-size: 3rem;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.client-item {
+    padding: 14px;
+}
+
+#clients img {
+    width: 150px;
+
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(bg3.jpg) no-repeat center center/cover;
+}
+
+#contact h1 {
+    font-size: 3rem;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+#contact-box label {
+    font-size: 1.4rem;
+}
+
+/* footer */
+footer {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0px;
+}
+
+/* utility class */
+.h-primary {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Mukta', sans-serif;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
